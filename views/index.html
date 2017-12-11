@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Lala World Token</title>
+
+        <script src="/views/plugins/jQuery/jquery-2.2.3.min.js"></script>
+
+        <script src="/views/bootstrap/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="/views/bootstrap/css/bootstrap.min.css">
+
+    </head>
+    <body>
+       <div class="container">
+       <div class="col-md-12">
+        <div class="col-md-4">
+            <h2>Lala Tokens Available :</h2>    
+           </div>
+           <div id="tokens" class="col-md-4"></div>
+       </div>
+         
+         <div class="form-row">
+           <div class="form-group col-md-4">
+             <input type='number' min="0" step='any' class="form-control" id="ethereum" placeholder="Ethereum">
+           </div>
+           <div class="form-group col-md-4">
+             <input type='number' min="0" step='any' class="form-control" id="lalaTokens" placeholder="Lala Token">
+           </div>
+           <div class="form-group col-md-4">
+            <button id="tradeRequest" class="btn btn-primary">Trade</button>
+           </div> 
+        </div>
+
+       <h4>Trade History:</h4>
+         <table class="table table-striped">
+           <thead>
+             <tr>
+                <th>Date & Time</th>
+               <th>Ethereum Volume Purchased</th>
+               <th>Lala Tokens Trades</th>
+             </tr>
+           </thead>
+           <tbody id="tradeHistory"></tbody>
+         </table>
+       </div>
+         
+    </body>
+    <script src="/views/js/index.js"></script>
+</html>
